@@ -3,4 +3,5 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
   Permissions-Policy: document-domain=()
-  Content-Security-Policy: script-src 'unsafe-inline'; frame-ancestors 'none';
+  X-XSS-Protection: 1; mode=block
+  Content-Security-Policy: script-src 'unsafe-inline'; frame-ancestors 'none'; default-src 'none'; form-action 'none'; style-src 'none'; object-src 'none'
